@@ -1,0 +1,190 @@
+
+.cSBMRi {
+    pointer-events: all;
+    position: relative;
+    padding: 5px;
+}
+
+@media (min-width: 992px) {
+    .cSBMRi .product-image {
+        height: calc(222.5px);
+    }
+}
+@media (min-width: 768px) {
+    .cSBMRi .product-image {
+        height: calc(162.5px);
+    }
+}
+@media (min-width: 576px) {
+    .cSBMRi .product-image {
+        height: calc(160px);
+    }
+}
+@media (min-width: 0px) {
+    .cSBMRi .product-image {
+        height: calc(-20px + 33.3333vw);
+    }
+}
+@media (min-width: 1200px) {
+    .cSBMRi .product-image {
+        height: calc(175px);
+    }
+}
+.cSBMRi .product-image .product-image-container {
+    border: 2px solid rgb(245, 245, 249);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 14px;
+}
+.lazyload-wrapper {
+    height: 100%;
+}
+.cSBMRi .product-image .product-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: none;
+}
+.cSBMRi .product-info {
+    margin-top: 5px;
+    text-align: right;
+}
+.cSBMRi .product-info .product-title {
+    text-transform: capitalize;
+    opacity: 1;
+}
+.cSBMRi .product-info .product-title {
+    text-transform: capitalize;
+    opacity: 1;
+}
+.cSBMRi .product-info .product-price .current-price {
+    color: rgb(82, 82, 133);
+}
+
+.dDJAXc .brand {
+    display: inline-flex;
+    -moz-box-align: center;
+    align-items: center;
+}
+.dDJAXc {
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0px;
+    position: relative;
+    height: 70px;
+    z-index: 6;
+    transition: all 0.3s ease 0s;
+    transform: translateY(0px);
+    border-bottom: 1px solid rgb(212, 212, 212);
+}
+a, a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+.dDJAXc .brand span {
+    font-weight: bold;
+    margin-right: 15px;
+}
+.bdDYJz {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    -moz-box-pack: start;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    position: relative;
+    height: auto;
+    padding: 10px 30px;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.bdDYJz::-webkit-scrollbar {
+    display: none;
+}
+
+.kJRDqT {
+    display: block;
+    height: 100%;
+    cursor: pointer;
+}
+.kJRDqT .category-inner {
+    position: relative;
+    display: flex;
+    -moz-box-align: center;
+    align-items: center;
+    max-width: 250px;
+    /*height: 100%;*/
+    height: 70px;
+    margin-left: 30px;
+    padding-right: 60px;
+    padding-left: 20px;
+    background: white none repeat scroll 0% 0%;
+    transition: all 0.3s ease 0s;
+}
+
+.kJRDqT .category-inner .category-icon {
+    transition: all 0.3s ease 0s;
+    position: absolute;
+    right: -20px;
+    width: 60px;
+    max-width: 60px;
+    max-height: 60px;
+    height: 120%;
+    display: flex;
+    -moz-box-align: center;
+    align-items: center;
+    -moz-box-pack: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) -7px 5px 7px;
+    overflow: hidden;
+}
+.kJRDqT .with-border {
+    border: 1px solid rgb(82, 82, 133);
+    border-radius: 8px;
+    background-color: white;
+    color: #212529;
+}
+.kJRDqT {
+    cursor: pointer;
+}
+.kJRDqT .category-inner .category-icon img {
+    width: 35px;
+}
+.kJRDqT .category-inner .category-title {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+.dakihv {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    z-index: 5;
+    transition: all 0.3s ease 0s;
+    background: white none repeat scroll 0% 0%;
+    border-bottom: 1px solid rgb(212, 212, 212);
+    transform: translateY(70px);
+}
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+.kJRDqT .category-inner .category-icon img {
+    width: 80px;
+}
+.ixASIj {
+    margin-top: 120px;
+    margin-bottom: 100px;
+}
+.cCREur {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 5;
+    transition: all 0.3s ease 0s;
+    background: white none repeat scroll 0% 0%;
+    border-bottom: 1px solid rgb(212, 212, 212);
+    transform: translateY(0px);
+}
