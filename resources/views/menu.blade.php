@@ -4,7 +4,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>قائمة طعام مطعم بيت حلب</title>
+    <title>قائمة طعام مطعم حارات</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/menu.css')}}">
@@ -39,7 +39,7 @@
         <div class="justify-content-between align-items-center row">
             <div class="text-center col">
                 <a class="brand" href="#">
-                    <img src="{{asset('image/harat_logo.png')}}" alt="مطعم بيت حلب" style="height: 50px;">
+                    <img src="{{asset('image/harat_logo.png')}}" alt="مطعم بيت حارات" style="height: 50px;">
 
                 </a>
             </div>
