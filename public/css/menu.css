@@ -68,7 +68,7 @@
     align-items: center;
 }
 .dDJAXc {
-    background-color: rgb(255, 255, 255);
+    /*background-color: rgb(255, 255, 255);*/
     padding: 10px 0px;
     position: relative;
     height: 70px;
@@ -112,14 +112,18 @@ a, a:hover {
     display: flex;
     -moz-box-align: center;
     align-items: center;
-    max-width: 250px;
+    /*max-width: 70px;*/
     /*height: 100%;*/
-    height: 70px;
-    margin-left: 30px;
-    padding-right: 60px;
-    padding-left: 20px;
+    height: 120px;
+    margin-left: 15px;
     background: white none repeat scroll 0% 0%;
     transition: all 0.3s ease 0s;
+    padding: 0px 15px;
+}
+
+.imgCovered {
+    background: linear-gradient(0deg, rgba(129, 49, 50,0.3), rgba(129, 49, 50,0.3)), url(/storage/food/BjfZtgzV6nOtNM19PTbybUP1LJPiX5k3pnVQiXI9.jpg);
+    background-size: cover;
 }
 
 .kJRDqT .category-inner .category-icon {
@@ -140,10 +144,9 @@ a, a:hover {
     overflow: hidden;
 }
 .kJRDqT .with-border {
-    border: 1px solid rgb(82, 82, 133);
-    border-radius: 8px;
-    background-color: white;
-    color: #212529;
+    border-radius: 25px;
+    background-color: #813132;
+    color: white;
 }
 .kJRDqT {
     cursor: pointer;
@@ -156,6 +159,7 @@ a, a:hover {
     padding-bottom: 4px;
     font-weight: 600;
     font-size: 0.9rem;
+    text-align: center;
 }
 .dakihv {
     position: absolute;
@@ -163,7 +167,7 @@ a, a:hover {
     top: 0px;
     z-index: 5;
     transition: all 0.3s ease 0s;
-    background: white none repeat scroll 0% 0%;
+    /*background: white none repeat scroll 0% 0%;*/
     border-bottom: 1px solid rgb(212, 212, 212);
     transform: translateY(70px);
 }
@@ -175,7 +179,7 @@ a, a:hover {
     width: 80px;
 }
 .ixASIj {
-    margin-top: 120px;
+    margin-top: 160px;
     margin-bottom: 100px;
 }
 .cCREur {
@@ -187,4 +191,26 @@ a, a:hover {
     background: white none repeat scroll 0% 0%;
     border-bottom: 1px solid rgb(212, 212, 212);
     transform: translateY(0px);
+}
+
+.remove_all_style{
+    background-size: cover !important;
+}
+.float{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index:100;
+}
+
+.my-float{
+    margin-top:16px;
 }

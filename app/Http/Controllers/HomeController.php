@@ -87,7 +87,9 @@ class HomeController extends Controller
                 </a>
             </div>';
         }
-        return $div;
+        $data['category'] = Category::findOrFail($id);
+        $data['foods'] = $div;
+        return $data;
     }
 
     public function description($id){

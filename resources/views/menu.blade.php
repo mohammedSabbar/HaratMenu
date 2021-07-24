@@ -25,6 +25,10 @@
     {
         font-family: 'Cairo', sans-serif !important;
     }
+    body{
+        background-image: url("{{asset('image/harat.jpg')}}");
+        background-size: cover;
+    }
 </style>
 <body>
 
@@ -35,7 +39,7 @@
         <div class="justify-content-between align-items-center row">
             <div class="text-center col">
                 <a class="brand" href="#">
-                    <img src="{{asset('theme/images/logo1.png')}}" alt="مطعم بيت حلب" style="height: 50px;">
+                    <img src="{{asset('image/harat_logo.png')}}" alt="مطعم بيت حلب" style="height: 50px;">
 
                 </a>
             </div>
@@ -49,9 +53,9 @@
             @foreach($data['categories'] as $category)
                 <div class="col">
 
-                    <div dir="rtl" class="sc-eCApGN kJRDqT" onclick="getFood('{{route('menu.foodByCategory',$category->id)}}')">
-                        <div class="category-inner with-border">
-                            <div class="category-icon with-border"><img src="/{{$category->image}}"></div>
+                    <div dir="rtl" class="sc-eCApGN kJRDqT" onclick="getFood('{{route('menu.foodByCategory',$category->id)}}','{{$category->id}}')">
+                        <div class="category-inner with-border remove_all_style" id="category_img_{{$category->id}}" style="@if($category->id == $data['foods'][0]->category_id) background: linear-gradient(0deg, rgba(129, 49, 50,0.3), rgba(129, 49, 50,0.3)), url('/{{$category->image}}');@endif">
+{{--                            <div class="category-icon with-border"><img src="/{{$category->image}}"></div>--}}
                             <div class="category-title">{{$category->name_ar}}</div>
                         </div>
                     </div>
@@ -96,7 +100,10 @@
     </div>
 </div>
 
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="https://api.whatsapp.com/send?phone=+9647733366900" class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+</a>
 
 </body>
 <script>
@@ -133,7 +140,7 @@
         })
     }
 
-    function getFood(url) {
+    function getFood(url,category_id) {
         $.ajax({
             url: url,
             beforeSend: function () {
@@ -144,8 +151,10 @@
             success: function (result) {
                 //alert('success');
 
-                $('#foods').html(result);
+                $('#foods').html(result['foods']);
                 $('#foods').fadeIn();
+                $(".remove_all_style").removeAttr("style");
+                $("#category_img_"+category_id).css({"background":"linear-gradient(0deg, rgba(129, 49, 50,0.3), rgba(129, 49, 50,0.3)), url('/"+result['category']['image']+"'"});
             },
             complete: function () {
                 $('#loader').hide();
