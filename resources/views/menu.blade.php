@@ -54,7 +54,7 @@
                 <div class="col">
 
                     <div dir="rtl" class="sc-eCApGN kJRDqT" onclick="getFood('{{route('menu.foodByCategory',$category->id)}}','{{$category->id}}')">
-                        <div class="category-inner with-border remove_all_style" id="category_img_{{$category->id}}" style="@if($category->id == $data['foods'][0]->category_id) background: linear-gradient(0deg, rgba(129, 49, 50,0.3), rgba(129, 49, 50,0.3)), url('/{{$category->image}}');@endif">
+                        <div class="category-inner with-border remove_all_style" id="category_img_{{$category->id}}" style="min-width: 90px !important; @if($category->id == $data['foods'][0]->category_id) background: linear-gradient(0deg, rgba(129, 49, 50,0.3), rgba(129, 49, 50,0.3)), url('/{{$category->image}}');@endif">
 {{--                            <div class="category-icon with-border"><img src="/{{$category->image}}"></div>--}}
                             <div class="category-title">{{$category->name_ar}}</div>
                         </div>
